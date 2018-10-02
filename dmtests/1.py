@@ -21,4 +21,15 @@ def moja2():
     return
 #moja2()
 
-ileliczb = int(input("Podaj ilosć 
+
+ileliczb = int(input("Podaj ilosć typowanych liczb: "))
+maksliczba = int(input("Podaj z ilu liczb: "))
+i = 0
+while i < ileliczb:
+    liczba = random.randint(1,maksliczba)
+    liczby = []
+    if liczby.count(liczba)==0:
+        liczby.append(liczba)
+    i = i + 1
+print ("Wylosowane liczby", liczby)
+        
